@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>移动页面demo</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        /*media 默认为计算机屏幕screen
+        *通过max-width/min-width来控制页面样式随着屏幕尺寸的变化而变化
+        *方法一：如果屏幕尺寸大小有交集，大范围的写在上面，小范围的写在下面
+        *方法二：确保屏幕尺寸大小没有交集
+        */
+        /*@media(min-width:769px){
+            body{background: purple;}
+        }
+        @media(max-width:768px){
+            body{background: blue;}
+        }
+        @media(max-width:425px){
+            body{background: green;}
+        }
+        @media(max-width:375px){
+            body{background: orange;}
+        }
+        @media(max-width:320px){
+            body{background: red;}
+        }
+        */
+        /*
+        @media(max-width:320px){
+            body{background: red;}
+        }
+        @media(min-width:321px) and (max-width:375px){
+            body{background: orange;}
+        }
+        @media(min-width:376px) and (max-width:425px){
+            body{background: green;}
+        }
+        @media(min-width:426px) and (max-width:768px){
+            body{background: blue;}
+        }
+        @media(min-width:769px){
+            body{background: purple;}
+        }*/
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"></div>
+        <button id="menu">菜单</button>
+        <ul class="nav" id="nav">
+            <li><a href="#">导航1</a></li>
+            <li><a href="#">导航2</a></li>
+            <li><a href="#">导航3</a></li>
+            <li><a href="#">导航4</a></li>
+            <li><a href="#">导航5</a></li>
+        </ul>
+
+        <ul class="nav2" id="nav2">
+            <li><a href="#">导航1</a></li>
+            <li><a href="#">导航2</a></li>
+            <li><a href="#">导航3</a></li>
+            <li><a href="#">导航4</a></li>
+            <li><a href="#">导航5</a></li>
+        </ul>
+    </header>
+    <script>
+        menu.onclick=function(){
+           nav.classList.toggle("active");
+        }
+    </script>
+    
+</body>
+</html>
